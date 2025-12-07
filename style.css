@@ -1,0 +1,316 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.hero-section {
+  background: #00ffe1;
+  background: linear-gradient(90deg, rgba(0, 255, 225, 1) 0%, rgba(0, 172, 184, 1) 19%, rgba(0, 52, 77, 1) 86%);
+  padding: 120px 0;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  margin-top: -80px;
+}
+
+.color-icon {
+  color: #00ffe1;
+  color: linear-gradient(90deg, rgba(0, 255, 225, 1) 0%, rgba(0, 172, 184, 1) 19%, rgba(0, 52, 77, 1) 86%);
+}
+
+.login-wrapper {
+  height: 100vh;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #f4f4f9;
+}
+
+.login-box {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.login-box {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  animation: fadeIn 0.5s ease;
+}
+
+.login-box .icon-circle {
+  width: 80px;
+  height: 80px;
+  background: #00ffe1;
+  background: linear-gradient(90deg, rgba(0, 255, 225, 1) 0%, rgba(0, 172, 184, 1) 19%, rgba(0, 52, 77, 1) 86%);
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.btn-purple {
+  background: #00ffe1;
+  background: linear-gradient(90deg, rgba(0, 255, 225, 1) 0%, rgba(0, 172, 184, 1) 19%, rgba(0, 52, 77, 1) 86%);
+  color: white;
+  transition: 0.2s;
+}
+
+.btn-purple:hover {
+  background: #3d2a82;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.state-enrollment-section table {
+    border-color: #e6e6e6;
+    font-size: 0.95rem;
+}
+
+.state-enrollment-section th {
+    background: #fff;
+    border-bottom: 2px solid #000 !important;
+}
+
+.state-enrollment-section td {
+    background: #f7f7f7;
+}
+
+.state-enrollment-section tr:nth-child(even) td {
+    background: #ededed;
+}
+
+.state-enrollment-section tr:last-child td {
+    font-weight: 700;
+    background: #f2f2f2;
+}
+
+.simple-footer p {
+    color: #333;
+    font-size: 15px;
+    text-align: center;
+}
+
+.simple-footer small {
+    font-size: 13px;
+    color: #777 !important;
+}
+
+.about-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.about-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2 {
+    font-size: 28px;
+    }
+}
+
+.lecturers-section {
+    padding: -50px 0;
+    }
+
+.lecturer-card {
+  text-align: center;
+  margin-bottom: 50px;
+    }
+
+.lecturer-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+    }
+
+.lecturer-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+    }
+
+.lecturer-field {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .lecturer-card img {
+      width: 160px;
+      height: 160px;
+  }
+}
+
+.ecadangan-section {
+    padding: 60px 0;
+}
+
+.ecadangan-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.ecadangan-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* FORM STYLING */
+.cadangan-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.cadangan-form .form-group {
+    margin-bottom: 20px;
+}
+
+.cadangan-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.cadangan-form .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    background: #6E3CBC;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #552a94;
+}
+
+/* TABLE */
+.table-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cadangan-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cadangan-table th, 
+.cadangan-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.cadangan-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+/* ACTION BUTTONS */
+.action-col {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-action.update {
+    background: #4caf50;
+    color: white;
+}
+
+.btn-action.delete {
+    background: #e53935;
+    color: white;
+}
+
+.btn-action.update:hover {
+    background: #449d48;
+}
+
+.btn-action.delete:hover {
+    background: #cc2f2d;
+}
