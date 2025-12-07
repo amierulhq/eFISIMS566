@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="UiTMTabBar.png">
+    <title>eFIS Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script></head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="dashboard.html">
+        <img src="UiTMLogo.png" height="55">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">About FIS</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="lecturers.html">Our Lecturers</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="cadangan.html">eCadangan</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold mt-5">Faculty of Information Science</h1>
+    <p class="mt-10">Source: Universiti Teknologi MARA | Updated: December 2025</p>
+  </section>
+
+<main>
+<div class="container">
+    <div class="row mid mb-4 mt-4">
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>UiTM Puncak Perdana</div>
+                            <div class="fs-4 fw-bold">2,765</div>
+                            <div style="font-size: 0.65rem;">Total Students</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-danger text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-people fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>UiTM Samarahan</div>
+                            <div class="fs-4 fw-bold">516</div>
+                            <div style="font-size: 0.65rem;">Total Students</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-info text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-people fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>UiTM Segamat</div>
+                            <div class="fs-4 fw-bold">479</div>
+                            <div style="font-size: 0.65rem;">Total Students</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-people fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>UiTM Rembau</div>
+                            <div class="fs-4 fw-bold">718</div>
+                            <div style="font-size: 0.65rem;">Total Students</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-people fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>UiTM Machang</div>
+                            <div class="fs-4 fw-bold">342</div>
+                            <div style="font-size: 0.65rem;">Total Students</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-people fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>Total Lecturers</div>
+                            <div class="fs-4 fw-bold">72</div>
+                            <div style="font-size: 0.65rem;">All Branch Campus</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-person-workspace fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>Total Subjects</div>
+                            <div class="fs-4 fw-bold">24</div>
+                            <div style="font-size: 0.65rem;">All FIS Programme</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-info text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-book fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-3 shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div>Graduates</div>
+                            <div class="fs-4 fw-bold">14,318</div>
+                            <div style="font-size: 0.65rem;">FIS Total Graduates</div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-danger text-white" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-mortarboard fs-4" style="line-height: 200px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="text-center mb-3 mt-5 main-title">
+    <span class="fw-bold">Graduates Statistics </span> - Faculty of Information Science
+</div>
+
+<div class="row text-center mt-4 mb-5">
+
+    <div class="col-md-3">
+        <h5 class="mb-3 fw-bold">Dean's List Award</h5>
+        <div id="waffleDiploma"></div>
+        <p class="mt-2">7,731 students (20%)</p>
+    </div>
+
+    <div class="col-md-3">
+        <h5 class="mb-3 fw-bold">First Class</h5>
+        <div id="waffleBachelor"></div>
+        <p class="mt-2">11,854 students (30%)</p>
+    </div>
+
+    <div class="col-md-3">
+        <h5 class="mb-3 fw-bold">Above 3.00</h5>
+        <div id="waffleMaster"></div>
+        <p class="mt-2">14,741 students (55%)</p>
+    </div>
+
+    <div class="col-md-3">
+        <h5 class="mb-3 fw-bold">Semester-Repeat</h5>
+        <div id="wafflePhD"></div>
+        <p class="mt-2">2,319 students (5%)</p>
+    </div>
+
+</div>
+
+    <div class="text-center mb-3 mt-5 main-title">
+    <span class="fw-bold">Total FIS Students </span> by UiTM State Campus
+    </div>
+    <section class="state-enrollment-section container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-bordered align-middle">
+                <thead>
+                    <tr class="fw-bold">
+                        <th>State Campus</th>
+                        <th class="text-end">Enrollment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="selangor.png" width="25"> UiTM Selangor - Puncak Perdana</td>
+                        <td class="text-end">2,765</td>
+                    </tr>
+                    <tr>
+                        <td><img src="johor.png" width="25"> UiTM Johor - Segamat</td>
+                        <td class="text-end">479</td>
+                    </tr>
+                    <tr>
+                        <td><img src="negerisembilan.png" width="25"> UiTM Negeri Sembilan - Rembau</td>
+                        <td class="text-end">718</td>
+                    </tr>
+                    <tr>
+                        <td><img src="kelantan.png" width="25"> UiTM Kelantan - Machang</td>
+                        <td class="text-end">342</td>
+                    </tr>
+                    <tr>
+                        <td><img src="sarawak.png" width="25"> UiTM Sarawak - Samarahan</td>
+                        <td class="text-end">516</td>
+                    </tr>
+                    <tr class="fw-bold bg-light">
+                        <td>Total</td>
+                        <td class="text-end">4,820</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-6">
+            <div id="campusBarChart"></div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function generateWaffleData(percentage) {
+    const filled = Math.round(percentage);
+    const empty = 100 - filled;
+    let data = [];
+
+    for (let i = 0; i < filled; i++) data.push(1);
+    for (let i = 0; i < empty; i++) data.push(0);
+
+    let final = [];
+    for (let i = 0; i < 10; i++) {
+        final.push({
+            name: "",
+            data: data.slice(i * 10, (i + 1) * 10)
+        });
+    }
+    return final;
+}
+
+function createWaffleChart(id, percentage) {
+    var options = {
+        chart: {
+            type: 'heatmap',
+            height: 270,
+            toolbar: { show: false }
+        },
+        grid: { padding: { top: 0, right: 0, bottom: 0, left: 0 }},
+        dataLabels: { enabled: false },
+        colors: ["#5640A6"],
+        plotOptions: {
+            heatmap: {
+                shadeIntensity: 0,
+                colorScale: {
+                    ranges: [
+                        { from: 1, to: 1, color: "#2A7B9B" },
+                        { from: 0, to: 0, color: "#2A9B97" }
+                    ]
+                }
+            }
+        },
+        series: generateWaffleData(percentage),
+        xaxis: { labels: { show: false }, axisBorder: { show: false }, axisTicks: { show: false }},
+        yaxis: { labels: { show: false }},
+        tooltip: { enabled: false }
+    };
+
+    new ApexCharts(document.querySelector(`#${id}`), options).render();
+}
+
+createWaffleChart("waffleDiploma", 39);
+createWaffleChart("waffleBachelor", 52);
+createWaffleChart("waffleMaster", 40);
+createWaffleChart("wafflePhD", 35);
+</script>
+<script>
+var options = {
+    chart: {
+        type: 'bar',
+        height: 350
+    },
+    series: [{
+        name: 'Enrollment',
+        data: [2765, 479, 718, 342, 516]
+    }],
+    xaxis: {
+        categories: ['Selangor','Segamat','Rembau','Machang','Samarahan'],
+        labels: { rotate: -90 }
+    },
+    colors: ['#2A7B9B'],
+    plotOptions: {
+        bar: { borderRadius: 4 }
+    }
+};
+var chart = new ApexCharts(document.querySelector("#campusBarChart"), options);
+chart.render();
+</script>
+    <footer class="simple-footer">
+        <center>
+            <p class="mb-1 fw-semibold">Faculty of Information Science (FIS) • UiTM</p>
+            <small class="text-muted">© 2025 Developed by Muhammad Amierul Haqeem. All Rights Reserved.</small>
+        </center>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
