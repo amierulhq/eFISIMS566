@@ -366,8 +366,28 @@ chart.render();
             <p class="mb-1 fw-semibold">Faculty of Information Science (FIS) • UiTM</p>
             <small class="text-muted">© 2025 Developed by Muhammad Amierul Haqeem. All Rights Reserved.</small>
         </center>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="autoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">eFIS Notification</strong>
+      <small>Just Now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      Its' Convocation Season! Congratulations to all students of the Faculty of Information Science who have successfully completed their studies!
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const autoToast = document.getElementById('autoToast');
+    const toast = new bootstrap.Toast(autoToast, { autohide: false });
+    toast.show();
+  });
+</script>
         </div>
     </footer>
 </main>
 </body>
+
 </html>
